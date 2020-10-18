@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby React / Firebase Chat`,
+    title: `Gatsby React / Firebase Starter`,
     description: ``,
     author: `@johnsonta87`,
   },
