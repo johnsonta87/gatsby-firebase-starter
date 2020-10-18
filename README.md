@@ -1,1 +1,1 @@
-## Gatsby React / Firebase Chat
+## Gatsby React / Firebase Starter
