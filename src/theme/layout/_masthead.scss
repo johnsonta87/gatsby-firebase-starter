@@ -1,0 +1,15 @@
+.masthead-container {
+  padding: 1rem;
+  text-align: center;
+  background: rgb(0, 0, 205);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 205, 1) 0%,
+    rgba(56, 56, 189, 1) 100%
+  );
+
+  h1 {
+    font-size: 1rem;
+    color: $secondary-color;
+  }
+}
