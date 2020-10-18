@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import firebase from "gatsby-plugin-firebase"
 import SignUp from './SignUp';
 import Login from './Login';
 
 export default function User() {
-  const [message, setMessage] = useState([]);
   const [loggedIn, setLoggedIn] = useState(false);
   const [authActions, setAuthActions] = useState('');
 
@@ -16,18 +15,6 @@ export default function User() {
         setLoggedIn(false)
       }
     });
-
-  useEffect(() => {
-    firebase.firestore()
-      .collection('message')
-      .onSnapshot(snap => {
-        const message = snap.docs.map(doc => ({
-          id: doc.id,
-          ...doc.data()
-        }));
-        setMessage(message);
-      });
-  }, []);
 
   return (
     <div>
